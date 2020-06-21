@@ -1,0 +1,79 @@
+* {
+  font-family: Courier;
+  font-size: 11pt;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 115%;
+  background-color: #ddd;
+}
+
+.container{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.chat {
+  width: 40%;
+  height: 95%;
+  margin: 0 auto;
+  position: fixed;
+  overflow-y: scroll;
+  background-color: rgb(61, 169, 231);
+}
+
+.actions {
+  position: fixed;
+  bottom: -15px;
+  display: block;
+  width: 40%;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.9);
+  height: 40px;
+}
+
+.actions input{
+  height: 40px;
+  display: block;
+  width: 100%;
+  outline: 0;
+  border-left: 0;
+  border-right: 0;
+  text-align: center;
+}
+
+.messages div {
+  max-width: 40%;
+  display: block;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 7px 40px 45px;
+  background: #0FB0DF;
+  color: #ffffffff;
+    
+}
+
+.messages .bot {
+  text-align: left;
+  margin-right: auto;
+  background: lightblue;
+}
+
+.messages .self {
+  text-align: right;
+  margin-left: auto;
+  background: rgba(221, 221, 221, 0.856)
+}
+
+
+@media screen and (max-width:900px){
+  .chat{
+    width: 70%;
+  }
+
+  .actions{
+    width: 70%;
+  }
+ 
+}
